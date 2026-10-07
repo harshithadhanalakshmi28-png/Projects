@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #1e293b;
+}
+
+.App {
+    min-height: 100vh;
+}
+
+/* Main Heading */
+h1 {
+    margin: 0;
+    padding: 30px 20px;
+    text-align: center;
+    background: #312e81;
+    color: white;
+    font-size: 34px;
+}
+
+/* Section Heading */
+h2 {
+    text-align: center;
+    margin: 35px 0 20px;
+    color: #312e81;
+    font-size: 26px;
+}
+
+/* Student Cards */
+.student {
+    width: 90%;
+    max-width: 600px;
+    margin: 18px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #c7d2fe;
+    box-shadow: 0 8px 20px rgba(49, 46, 129, 0.12);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.student:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(49, 46, 129, 0.2);
+}
+
+.student h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #4338ca;
+    font-size: 21px;
+}
+
+.student p {
+    margin: 8px 0;
+    color: #475569;
+    font-size: 15px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+        padding: 25px 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .student {
+        width: 92%;
+        padding: 20px;
+    }
+}

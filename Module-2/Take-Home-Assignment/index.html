@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hello, I'm <span>Harshitha</span></h1>
+
+            <p>
+                A Cyber Security student exploring web development,
+                programming and technology.
+            </p>
+
+            <a href="#projects" class="button">View My Projects</a>
+        </div>
+    </header>
+
+
+    <!-- About Me -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a BE Cyber Security student who is interested in
+            technology and software development. I enjoy learning
+            new programming concepts and building simple applications.
+        </p>
+
+        <p>
+            Currently, I am learning HTML, CSS, JavaScript and React
+            to improve my web development skills.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill">
+                <h3>React</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects Showcase</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>React Portfolio</h3>
+
+                <p>
+                    A personal portfolio website created using
+                    React components.
+                </p>
+
+               
+            </div>
+
+
+            <div class="project">
+                <h3>Expense Tracker</h3>
+
+                <p>
+                    A simple application used to record and
+                    manage personal expenses.
+                </p>
+
+
+            </div>
+
+
+            <div class="project">
+                <h3>Task Manager</h3>
+
+                <p>
+                    A task management application for adding,
+                    updating and deleting tasks.
+                </p>
+
+                
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Have a question or want to connect with me?
+            Send me a message.
+        </p>
+
+        <form onsubmit="return submitForm()">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Enter your message" required></textarea>
+
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <p id="result"></p>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Harshitha | Personal Portfolio</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

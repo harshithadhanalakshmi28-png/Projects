@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+}
+
+.app {
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #312e81;
+    margin-bottom: 40px;
+}
+
+.counter-card {
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.counter-card h2 {
+    color: #4338ca;
+}
+
+.count {
+    font-size: 60px;
+    font-weight: bold;
+    color: #1e293b;
+    margin: 25px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #4338ca;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #312e81;
+}
+
+@media (max-width: 500px) {
+    .buttons {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Workshop</title>
+</head>
+
+<body>
+
+    <h1 id="title">DOM Manipulation</h1>
+
+    <p id="message">Click the button to change this text.</p>
+
+    <button onclick="changeMessage()">Change Message</button>
+
+    <br><br>
+
+    <input type="text" id="nameInput" placeholder="Enter your name">
+
+    <button onclick="showName()">Submit</button>
+
+    <p id="result"></p>
+
+    <script>
+        function changeMessage() {
+            document.getElementById("message").innerHTML =
+                "The message has been changed using JavaScript!";
+        }
+
+        function showName() {
+            let name = document.getElementById("nameInput").value;
+
+            document.getElementById("result").innerHTML =
+                "Hello, " + name + "!";
+        }
+    </script>
+
+</body>
+</html>

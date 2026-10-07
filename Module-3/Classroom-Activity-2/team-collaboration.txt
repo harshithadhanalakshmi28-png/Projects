@@ -1,0 +1,11 @@
+Team Collaboration Simulation
+
+This activity demonstrates Git branch-based collaboration.
+
+Feature Update:
+A new feature was developed using a separate Git branch.
+
+Branch Name:
+feature-update
+
+The feature can be reviewed before merging it into the main branch.

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debugging Challenge</title>
+</head>
+
+<body>
+
+    <h1>Debugging Challenge</h1>
+
+    <p id="message">Click the button to display the result.</p>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+
+    function calculate() {
+
+        let number1 = 10;
+        let number2 = 5;
+
+        let result = number1 * number2;
+
+        document.getElementById("message").innerHTML =
+            "The result is: " + result;
+
+        console.log("Calculation completed");
+
+    }
+
+</script>
+
+</body>
+</html>

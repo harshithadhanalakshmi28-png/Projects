@@ -1,0 +1,595 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background: #1e3a8a;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #bfdbfe;
+}
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+.app-container > h1 {
+  text-align: center;
+  margin: 35px 0;
+  color: #1e3a8a;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 25px;
+}
+
+h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card h3 {
+  margin-bottom: 12px;
+  color: #475569;
+}
+
+.dashboard-card p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2563eb;
+  margin: 0;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   STUDENT PLACEMENT LIST
+========================= */
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.student-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.student-avatar {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.student-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.student-card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.student-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.delete-button {
+  background: #dc2626;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
+
+.empty-message {
+  text-align: center;
+  color: #64748b;
+}
+
+/* =========================
+   PLACEMENT OPPORTUNITIES
+========================= */
+
+.placement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.placement-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.company-logo {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #1e3a8a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.placement-card h3 {
+  color: #1e3a8a;
+}
+
+.placement-card p {
+  color: #64748b;
+}
+
+.placement-card button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* =========================
+   APPLICATION TRACKING
+========================= */
+
+.application-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.application-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.application-card h3 {
+  color: #1e3a8a;
+  margin-top: 0;
+}
+
+.application-card p {
+  color: #64748b;
+}
+
+.application-status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* =========================
+   INTERVIEW & SELECTION
+========================= */
+
+.interview-card {
+  background: white;
+  padding: 25px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.interview-card h3 {
+  color: #1e3a8a;
+}
+
+.interview-card p {
+  color: #64748b;
+}
+
+/* =========================
+   HORIZONTAL LINE
+========================= */
+
+hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 10px 0;
+}
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .student-grid,
+  .placement-grid,
+  .application-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar a {
+    margin: 8px;
+  }
+
+  section {
+    margin: 15px;
+    padding: 18px;
+  }
+}
+
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .dashboard-cards,
+  .student-grid,
+  .placement-grid,
+  .application-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 18px;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .app-container > h1 {
+    font-size: 26px;
+    margin: 25px 15px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input,
+  form button {
+    width: 100%;
+  }
+
+  .student-actions {
+    flex-direction: column;
+  }
+
+  .student-actions button {
+    width: 100%;
+  }
+}
+/* =========================
+   SEARCH STUDENTS
+========================= */
+
+.search-box {
+  display: flex;
+  justify-content: center;
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.search-results {
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+.search-result {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+.search-result strong {
+  color: #1e3a8a;
+}
+
+.search-result span {
+  color: #64748b;
+}
+/* =========================
+   ADD STUDENT
+========================= */
+
+.add-student-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.add-student-card form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.add-student-card button {
+  grid-column: span 3;
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  .add-student-card form {
+    grid-template-columns: 1fr;
+  }
+
+  .add-student-card button {
+    grid-column: span 1;
+  }
+}
+/* =========================
+   INTERVIEW STATUS
+========================= */
+
+.interview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.interview-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.status-icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.interview-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.interview-card p {
+  color: #64748b;
+}
+
+.interview-status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.scheduled {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.selected {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+@media (max-width: 800px) {
+  .interview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   EDIT PROFILE
+========================= */
+
+.edit-profile-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.edit-profile-card form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.edit-actions {
+  grid-column: span 3;
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.cancel-button {
+  background: #64748b;
+}
+
+.cancel-button:hover {
+  background: #475569;
+}
+
+@media (max-width: 800px) {
+  .edit-profile-card form {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-actions {
+    grid-column: span 1;
+  }
+}
+/* =========================
+   DASHBOARD HEADER
+========================= */
+
+.dashboard-header {
+  text-align: center;
+  padding: 35px 20px 10px;
+}
+
+.dashboard-label {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 38px;
+}
+
+.dashboard-subtitle {
+  color: #64748b;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+@media (max-width: 500px) {
+  .dashboard-header h1 {
+    font-size: 28px;
+  }
+
+  .dashboard-subtitle {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,146 @@
+LOGIC BUILDING CHALLENGE
+
+Objective:
+To develop problem-solving and logical thinking skills by solving problems
+using pseudocode and flowcharts before writing the actual program.
+
+Problem 1: Find the Largest of Three Numbers
+
+Problem Statement:
+Find the largest number among three given numbers.
+
+Pseudocode:
+
+START
+Input A, B, C
+
+IF A >= B AND A >= C
+    Largest = A
+ELSE IF B >= A AND B >= C
+    Largest = B
+ELSE
+    Largest = C
+
+Display Largest
+STOP
+
+
+Flowchart:
+
+        START
+          |
+          v
+    Input A, B, C
+          |
+          v
+   Is A >= B and A >= C?
+       /          \
+     Yes           No
+      |             |
+      v             v
+ Largest = A   Is B >= A and B >= C?
+                    /       \
+                  Yes        No
+                   |          |
+                   v          v
+             Largest = B   Largest = C
+                   \          /
+                    \        /
+                     v      v
+                  Display Largest
+                         |
+                         v
+                        STOP
+
+
+Problem 2: Check Whether a Number is Even or Odd
+
+Problem Statement:
+Determine whether a given number is even or odd.
+
+Pseudocode:
+
+START
+Input Number
+
+IF Number MOD 2 = 0
+    Display "Even"
+ELSE
+    Display "Odd"
+
+STOP
+
+
+Flowchart:
+
+       START
+         |
+         v
+   Input Number
+         |
+         v
+  Number MOD 2 = 0?
+      /        \
+    Yes         No
+     |           |
+     v           v
+ Display       Display
+  "Even"        "Odd"
+      \          /
+       \        /
+        v      v
+          STOP
+
+
+Problem 3: Calculate the Sum of Numbers from 1 to N
+
+Problem Statement:
+Calculate the sum of all numbers from 1 to N.
+
+Pseudocode:
+
+START
+Input N
+Sum = 0
+I = 1
+
+WHILE I <= N
+    Sum = Sum + I
+    I = I + 1
+
+Display Sum
+STOP
+
+
+Flowchart:
+
+       START
+         |
+         v
+      Input N
+         |
+         v
+    Sum = 0, I = 1
+         |
+         v
+       I <= N?
+       /     \
+     Yes      No
+      |        |
+      v        v
+ Sum = Sum + I  Display Sum
+      |
+      v
+   I = I + 1
+      |
+      |
+      └──────────> I <= N?
+                       |
+                      STOP
+
+
+Conclusion:
+
+The activity demonstrates how a real-world problem can be divided into
+smaller logical steps. Pseudocode and flowcharts help understand and verify
+the solution before implementing it using a programming language.
